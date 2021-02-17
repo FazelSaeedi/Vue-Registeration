@@ -1,9 +1,9 @@
 <template>
   <div class="topnav">
-    <a href="#home">Home</a>
+    <router-link  to="/" class="nav-link">Home</router-link>
     <div class="login-container">
-        <a>Login</a>
-        <a>Register</a>
+      <router-link  to="/login" class="nav-link">Login</router-link>
+      <router-link  to="/register" class="nav-link">Register</router-link>
     </div>
   </div>
 </template>
