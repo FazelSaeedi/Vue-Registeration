@@ -11,11 +11,12 @@
 
 <script>
 export default {
-name: "Nav",
+  name: "Nav",
   props : ['user'] ,
   methods :{
       logout(){
         localStorage.setItem('userlogin' , 'null')
+        location.reload();
       }
   }
 }

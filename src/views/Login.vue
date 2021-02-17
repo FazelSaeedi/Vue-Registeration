@@ -36,8 +36,11 @@ export default {
           var userLogin = { email : this.email  };
           localStorage.setItem('userlogin', JSON.stringify(userLogin));
 
-          alert("you are login")
-          this.$router.push('/')
+          alert("you are login");
+          this.$router.push('/');
+          setTimeout(function (){
+            location.reload();
+          },500)
         }else
           alert("your Password is wrong")
       }
