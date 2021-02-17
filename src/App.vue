@@ -4,17 +4,24 @@
     <Nav  />
   </div>
 
-
+  <div class="container-fluid" >
+    <div class="row vertical-center">
+      <form class="mainContent col-xs-8 col-xs-offset-2  col-sm-6 col-sm-offset-3 col-md-4 col-sm-offset-4 col-lg-2 col-lg-offset-5">
+          <Home />
+      </form>
+    </div>
+  </div>
 
 </template>
 
 <script>
-// eslint-disable-next-line no-unused-vars
 import Nav from "@/components/Nav";
+import Home from "@/views/Home";
 
 export default {
   name: 'App',
   components: {
+    Home,
     Nav
   }
 }
@@ -28,5 +35,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.mainContent{
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
