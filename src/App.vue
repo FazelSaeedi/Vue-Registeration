@@ -7,7 +7,7 @@
   <div class="container-fluid" >
     <div class="row vertical-center">
       <form class="mainContent col-xs-8 col-xs-offset-2  col-sm-6 col-sm-offset-3 col-md-4 col-sm-offset-4 col-lg-2 col-lg-offset-5">
-          <Home />
+        <router-view  />
       </form>
     </div>
   </div>
@@ -16,12 +16,11 @@
 
 <script>
 import Nav from "@/components/Nav";
-import Home from "@/views/Home";
+
 
 export default {
   name: 'App',
   components: {
-    Home,
     Nav
   }
 }
