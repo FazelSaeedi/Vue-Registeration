@@ -1,10 +1,13 @@
 <template>
-  <h2>You are in Home Page</h2>
+  <h2 v-if="user">You are in Home  {{user}}</h2>
+  <h2 v-if="!user">You are not in Home  {{user}}</h2>
+
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "Home" ,
+  props: ['user']
 }
 </script>
 

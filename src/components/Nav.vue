@@ -2,15 +2,22 @@
   <div class="topnav">
     <router-link  to="/" class="nav-link">Home</router-link>
     <div class="login-container">
-      <router-link  to="/login" class="nav-link">Login</router-link>
-      <router-link  to="/register" class="nav-link">Register</router-link>
+      <router-link  to="/login" class="nav-link" v-if="!user">Login</router-link>
+      <router-link  to="/register" class="nav-link" v-if="!user">Register</router-link>
+      <a @click="logout" v-if="user">Log out</a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-name: "Nav"
+name: "Nav",
+  props : ['user'] ,
+  methods :{
+      logout(){
+        localStorage.setItem('userlogin' , 'null')
+      }
+  }
 }
 </script>
 
