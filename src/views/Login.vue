@@ -1,5 +1,5 @@
 <template>
-  <h1>Register</h1>
+  <h1>Login</h1>
   <p>
     <label class="sr-only" >Email Address</label>
     <input class="form-control" type="email" placeholder="Email Address" required autofocus>
@@ -10,16 +10,12 @@
     <input class="form-control" type="email" placeholder="Password" required>
   </p>
 
-  <p>
-    <label class="sr-only" >Confirm Password</label>
-    <input class="form-control" type="email" placeholder="Password" required>
-  </p>
 
-  <button class="btn btn-primary btn-block" type="sumbit">Register</button></template>
+  <button class="btn btn-primary btn-block" type="sumbit">Login</button></template>
 
 <script>
 export default {
-  name: "Register"
+  name: "Login"
 }
 </script>
 
